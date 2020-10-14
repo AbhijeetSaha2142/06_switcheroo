@@ -23,8 +23,9 @@ int main(){
         b[i] = *p;
         p--;
     }
+    p = b;
     printf("\n");
     for (int i = 0; i < 10; i++){
-        printf("%d  ", b[i]);
+        printf("%d  ", *(p+i));
     }
 }
